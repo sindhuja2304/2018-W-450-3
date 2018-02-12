@@ -20,4 +20,5 @@ RUN conda config --system --append channels r && \
     conda clean -tipsy && \
     fix-permissions $CONDA_DIR 
 
-RUN conda install pymongo twitter
+RUN conda install pymongo 
+RUN pip install twitter
